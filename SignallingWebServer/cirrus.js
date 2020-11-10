@@ -186,16 +186,6 @@ if(config.UseAuthentication){
 		}
 	);
 }
-// 发布一个接口接收数据
-app.get('/rest/hello', function(req, res){
-	res.send("hello world");
-});
-
-app.post('/rest/receive',bodyParser.json(),bodyParser.urlencoded({ extended: false }), function(req, res){
-	// 发送ws广播
-	broadcast(req.body);
-	res.send("server received : "+JSON.stringify(req.body));
-});
 
 //Setup folders
 app.use(express.static(path.join(__dirname, '/public')))
@@ -420,12 +410,6 @@ function disconnectAllPlayers(code, reason) {
 	let clone = new Map(players);
 	for (let player of clone.values()) {
 		player.ws.close(code, reason);
-	}
-}
-// 给所有用户发送广播
-function broadcast(msg){
-	for (let p of players.values()) {
-		p.ws.send(msg);
 	}
 }
 

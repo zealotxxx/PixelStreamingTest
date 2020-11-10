@@ -1514,8 +1514,6 @@ function connect() {
 			onWebRtcAnswer(msg);
 		} else if (msg.type === 'iceCandidate') {
 			onWebRtcIce(msg.candidate);
-		} else if (msg.type === 'emitUI') {
-			emitUIInteraction(msg.data);
 		} else {
 			console.log(`invalid SS message type: ${msg.type}`);
 		}
