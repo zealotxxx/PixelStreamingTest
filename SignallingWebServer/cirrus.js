@@ -193,7 +193,7 @@ app.get('/rest/hello', function(req, res){
 
 app.post('/rest/receive',bodyParser.json(),bodyParser.urlencoded({ extended: false }), function(req, res){
 	// 发送广播
-	broadcast(req.body);
+	broadcast(JSON.stringify(req.body));
 	res.send("server received : "+JSON.stringify(req.body));
 });
 
