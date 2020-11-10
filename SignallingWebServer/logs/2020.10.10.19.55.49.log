@@ -1,0 +1,13 @@
+19:55:49.162 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": true,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "player.htm",
+	"AdditionalRoutes": {}
+}
+19:55:49.180 No --PixelStreamingMonitorPort specified (or is 0). Running unmonitored.
+19:55:49.259 WebSocket listening to Streamer connections on :8888
+19:55:49.259 WebSocket listening to Players connections on :8001
+19:55:49.278 Http listening on *: 8001

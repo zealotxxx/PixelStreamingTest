@@ -1,0 +1,27 @@
+20:07:51.684 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": true,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "player.htm",
+	"AdditionalRoutes": {},
+	"httpPort": 80,
+	"streamerPort": 8888
+}
+20:07:51.685 No --PixelStreamingMonitorPort specified (or is 0). Running unmonitored.
+20:07:51.726 WebSocket listening to Streamer connections on :8888
+20:07:51.726 WebSocket listening to Players connections on :80
+20:07:51.727 Http listening on *: 80
+20:11:48.998 Streamer connected: ::1
+20:14:27.898 Streamer connected: ::1
+20:15:56.463 Streamer connected: ::1
+20:22:39.160 Streamer connected: ::1
+20:25:58.819 Streamer connected: ::1
+20:27:07.617 Streamer connected: ::1
+20:27:36.626 Streamer connected: ::1
+20:28:29.868 Streamer connected: ::1
+20:29:04.738 Streamer connected: ::1
+20:29:31.668 Streamer connected: ::1
+20:30:56.345 Streamer connected: ::1
+20:31:24.080 Streamer connected: ::1
